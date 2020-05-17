@@ -1,0 +1,17 @@
+[package]
+name = "drugra"
+version = "0.1.0"
+authors = ["j-keck <jhyphenkeck@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+druid = { git = "https://github.com/xi-editor/druid", rev = "4af27095564f7674e5fd8f6d49b22c67cc24ae82" }
+graphql_client = "0.9.0"
+surf = "2.0.0-alpha"
+anyhow = "1.0.28"
+serde = "1.0.106"
+smol = "0.1.4"
+futures = "0.3.4"
+log = "0.4.8"

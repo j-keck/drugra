@@ -1,0 +1,21 @@
+query RepoQuery($owner: String!, $name: String!) {
+    repository(owner: $owner, name: $name) {
+        description
+        primaryLanguage {
+            name
+        }
+        watchers {
+            totalCount
+        }
+        stargazers {
+            totalCount
+        }
+        forkCount
+        issues(states: OPEN) {
+            totalCount
+        }
+        pullRequests(states: OPEN) {
+            totalCount
+        }
+    }
+}

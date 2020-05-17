@@ -1,0 +1,16 @@
+query ReleasesQuery($owner: String!, $name: String!) {
+  repository(owner: $owner, name: $name) {
+    releases(last: 100) {
+      nodes {
+        name
+        tagName
+        releaseAssets(last: 100) {
+          nodes {
+            name
+            downloadCount
+          }
+        }
+      }
+    }
+  }
+}
